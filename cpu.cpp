@@ -59,9 +59,8 @@ void cpu::run() {
 //  }
 //}
 
-void cpu::pc_increase(word offset){
-  pc = npc;
-  npc += offset;
+word cpu::pc_increase(word offset){
+	return pc + 4;
 }
 
 void cpu::execute(const instruction& inst){

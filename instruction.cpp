@@ -10,11 +10,11 @@ std::ostream& operator<<(std::ostream&  os, const instruction& instr)
 {
 	std::string binstr = instr.bin.to_string();
 	if (instr.type == 'r')
-		os << "R   " << "opcode:" << binstr.substr(0, 6) << "rs:" << binstr.substr(6, 5) << "rt:" << binstr.substr(11, 5) << "rd:" << binstr.substr(16, 5) << "shamt:" << binstr.substr(21, 5) << "funct:" << binstr.substr(26, 6) << "  ";
+		os << "R   " << "opcode:" << binstr.substr(0, 6) << " rs:" << binstr.substr(6, 5) << " rt:" << binstr.substr(11, 5) << " rd:" << binstr.substr(16, 5) << " shamt:" << binstr.substr(21, 5) << " funct:" << binstr.substr(26, 6) << "  ";
 	else if (instr.type == 'i')
-		os << "I   " << "opcode:" << binstr.substr(0, 6) << "rs:" << binstr.substr(6, 5) << "rt:" << binstr.substr(11, 5) << "address offset:" << binstr.substr(16, 16) <<"i_imi" << instr.i_imi << "  ";
+		os << "I   " << "opcode:" << binstr.substr(0, 6) << " rs:" << binstr.substr(6, 5) << " rt:" << binstr.substr(11, 5) << " address offset:" << binstr.substr(16, 16) <<" i_imi" << instr.i_imi << "  ";
 	else
-		os << "J   " << "opcode:" << binstr.substr(0, 6) << "target address:"<<binstr.substr(6,26);
+		os << "J   " << "opcode:" << binstr.substr(0, 6) << " target address:"<<binstr.substr(6,26);
 	return os;
 }
 
@@ -66,4 +66,14 @@ bool instruction::is_I_type(int opcode){
 }
 bool instruction::is_J_type(int opcode){
   return opcode == 0x02 || opcode == 0x03;
+}
+
+bool instruction::is_LW(int opcode) {
+	return opcode == 0b100011;
+}
+bool instruction::is_SW(int opcode) {
+	return opcode == 0b101011;
+}
+bool instruction::is_BRANCH(int opcode) {
+	return opcode == 0b000100 || opcode == 0b000101;
 }

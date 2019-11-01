@@ -1,0 +1,22 @@
+﻿  cpu.cpp
+D:\projects\mips_pipline_cpu-master\cpu.cpp(656,31): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  piplinecpu.cpp
+D:\projects\mips_pipline_cpu-master\cpu.cpp(668,31): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\projects\mips_pipline_cpu-master\piplinecpu.cpp(174,2): error C2065: “struce”: 未声明的标识符
+D:\projects\mips_pipline_cpu-master\piplinecpu.cpp(174,9): error C2146: 语法错误: 缺少“;”(在标识符“IFID”的前面)
+D:\projects\mips_pipline_cpu-master\piplinecpu.cpp(175,2): error C2059: 语法错误:“return”
+D:\projects\mips_pipline_cpu-master\piplinecpu.cpp(188,14): error C2672: “get”: 未找到匹配的重载函数
+D:\projects\mips_pipline_cpu-master\piplinecpu.cpp(188,32): error C2784: “tuple_element<_Idx,std::pair<_Ty1,_Ty2>>::type &std::get(std::pair<_Ty1,_Ty2> &) noexcept”: 未能从“instruction”为“std::pair<_Ty1,_Ty2> &”推导 模板 参数
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\utility(453): message : 参见“std::get”的声明
+D:\projects\mips_pipline_cpu-master\piplinecpu.cpp(193,19): error C2065: “inst”: 未声明的标识符
+D:\projects\mips_pipline_cpu-master\piplinecpu.cpp(194,11): error C2065: “inst”: 未声明的标识符
+D:\projects\mips_pipline_cpu-master\piplinecpu.cpp(195,24): error C2065: “inst”: 未声明的标识符
+D:\projects\mips_pipline_cpu-master\piplinecpu.cpp(196,24): error C2065: “inst”: 未声明的标识符
+D:\projects\mips_pipline_cpu-master\piplinecpu.cpp(197,24): error C2065: “inst”: 未声明的标识符
+D:\projects\mips_pipline_cpu-master\piplinecpu.cpp(206,17): error C2065: “inst”: 未声明的标识符
+D:\projects\mips_pipline_cpu-master\piplinecpu.cpp(212,1): error C2059: 语法错误:“}”
+D:\projects\mips_pipline_cpu-master\piplinecpu.cpp(212,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+D:\projects\mips_pipline_cpu-master\piplinecpu.cpp(215,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+  simulator.cpp
+  正在生成代码...
+D:\projects\mips_pipline_cpu-master\piplinecpu.cpp(215,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)

@@ -18,10 +18,13 @@ public:
   std::bitset<32> bin;
   instruction();
   instruction(word inst);
-private:
+//private:
   bool is_R_type(int opcode);
   bool is_I_type(int opcode);
   bool is_J_type(int opcode);
+  bool is_LW(int opcode);
+  bool is_SW(int opcode);
+  bool is_BRANCH(int opcode);
 };
 
 std::ostream& operator<<(std::ostream&  os, const instruction& instr);

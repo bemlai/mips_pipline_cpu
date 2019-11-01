@@ -92,7 +92,7 @@ protected:
   virtual void XORI  (const instruction& inst);
 
   //SUB-INSTRUCTION
-  void pc_increase(word offset);
+  word pc_increase(word offset);
   word sign_extend_imi(const instruction& inst);
   bool test_overflow(word a, word b, word res);
   void test_zero_fields_R(const instruction& inst);
